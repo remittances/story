@@ -98,7 +98,7 @@
       <section id="intro">
         <h1 class="intro__hed">Здесь название статьи</h1>
         <p class="intro__dek">
-          Аталов С.
+          Atalov
         </p>
       </section>
 
@@ -223,13 +223,9 @@
       // generic window resize listener event
       function handleResize() {
         // 1. update height of step elements
-        // Здесь настраивается высота бокса 1
+
         var stepH = Math.floor(window.innerHeight * 0.45);
         step.style("height", stepH + "px");
-
-        // Здесь настраивается высота бокса 2
-        //var stepH_two = Math.floor(window.innerHeight * 0.25);
-        //step_auto.style("height", stepH_two + "px");
 
         var figureHeight = window.innerHeight / 2;
         var figureMarginTop = (window.innerHeight - figureHeight) / 2;
@@ -254,11 +250,9 @@
 
         // update graphic based on step
         figure.select("p").text(response.index + 1);
-
-        //переключение слайдов при прокрутке
+          
         var iframe = document.querySelector("#scrolly iframe");
         iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
-        //iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
       }
 
       function setupStickyfill() {
@@ -291,7 +285,6 @@
       // kick things off
       init();
     </script>
-          <!-- <div id="scrollama__debug-offset--hpn1625372229945" class="scrollama__debug-offset" style="position: fixed; left: 0px; width: 100%; height: 0px; border-top: 2px dashed black; z-index: 9999; top: 243.87px;"><p style="font-size: 12px; font-family: monospace; color: black; margin: 0px; padding: 6px;">".step" trigger: <span>0.33</span></p></div> -->
-  
+          
 
 </body></html>
